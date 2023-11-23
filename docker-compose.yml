@@ -1,0 +1,12 @@
+name: facebook-api
+services:
+    postgres:
+        container_name: facebook-api-container
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+            - POSTGRES_DB=facebook-api
+        ports:
+            - 5433:5432
+        restart: always
+        image: postgres
