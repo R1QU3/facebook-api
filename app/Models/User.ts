@@ -22,7 +22,7 @@ export default class User extends BaseModel {
   public rememberMeToken: string | null
 
   @column()
-  public hasEmailVerified: string
+  public hasEmailVerified: boolean
 
   @column()
   public isActive: boolean
